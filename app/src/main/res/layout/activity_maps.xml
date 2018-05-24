@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight = "60dp"
+    sothree:umanoShadowHeight="30dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeTopBar"
+            android:layout_below="@id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner_filters"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Add_Filters"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:id="@+id/imageViewDistance"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/spinner_filters"
+                android:src="@drawable/ic_distance" />
+
+            <TextView
+                android:id="@+id/textViewDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewDistance"
+                android:text="0 km" />
+
+            <ImageView
+                android:id="@+id/imageViewTime"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/textViewDistance"
+                android:padding="5dp"
+                android:src="@drawable/ic_clock" />
+
+            <TextView
+                android:id="@+id/textViewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewTime"
+                android:text="0 min" />
+
+
+        </RelativeLayout>
+
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.tneeraja.mapsdemo.MapsActivity"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/relativeTopBar"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_sliding_layout">
+
+        <TextView
+            android:textSize="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textNearbyPlaces"
+            android:text="Nearby Parking Places"/>
+
+
+        <ScrollView
+            android:layout_below="@+id/textNearbyPlaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <ListView
+                android:id="@+id/mobile_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </ListView>
+        </ScrollView>
+    </RelativeLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

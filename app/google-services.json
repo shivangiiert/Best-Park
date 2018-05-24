@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "234083214142",
+    "firebase_url": "https://workingmapsnearbyplacesd.firebaseio.com",
+    "project_id": "workingmapsnearbyplacesd",
+    "storage_bucket": "workingmapsnearbyplacesd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234083214142:android:9051fd46b438f8b7",
+        "android_client_info": {
+          "package_name": "com.example.tneeraja95.mapsdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234083214142-1ocsb9mlod8hm83jc8kutqjg211fmj93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tneeraja95.mapsdemo",
+            "certificate_hash": "2b6f3bdfde3de4e2468d6da34b70f4e1f43c6320"
+          }
+        },
+        {
+          "client_id": "234083214142-oqj7d4l8q00g4mc9rr6nrv2ov0k2a8tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tneeraja95.mapsdemo",
+            "certificate_hash": "ec412b86d97598c2bdbea7113ba1610ce2921b01"
+          }
+        },
+        {
+          "client_id": "234083214142-g94i3n2m5t9p9pvpacgqk5hfnm5otosk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVoUPoKtxUdRrXZaYdladeDYxdd0XZi9M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234083214142-g94i3n2m5t9p9pvpacgqk5hfnm5otosk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
